@@ -36,4 +36,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.get('/troubleshoot', function (req, res) {
+  res.send('Hello Troubleshoot!\n');
+});
+
 module.exports = app;
