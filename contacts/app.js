@@ -25,6 +25,10 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+app.get('/contact', function (req, res) {
+  res.send('Hello Contact!\n');
+});
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
