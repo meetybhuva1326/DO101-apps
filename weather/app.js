@@ -25,6 +25,10 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+app.get('/weather', function (req, res) {
+  res.send('Hello Weather!\n');
+});
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
